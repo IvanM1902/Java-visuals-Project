@@ -184,16 +184,34 @@ public class Audio3 extends PApplet
             break;
         
         case 4:
-        background(0);
-        for(int i = 0 ; i < ab.size() ; i ++)
         {
-            float c = map(ab.get(i), -1, 1, 0, 255);
-            stroke(c, 255, 255);
-            float f = lerpedBuffer[i] * halfH * 4.0f;
-
-
-            //rect(f--, f--, i--, i--);
-            
+            background(0);
+            int grid = 20;   
+            float radius = map(smoothedAmplitude, 0, 0.1f, 50, 300);		
+            int points = (int)map(mouseX, 0, 255, 3, 10);
+            int sides = points * 2;
+            for(int i = grid ; i < ab.size() - grid ; i += grid)
+            {
+                for(int j = grid; j < ab.size() - grid; j += grid)
+                {
+                    translate(1260, 300, 7);
+                    float f = lerpedBuffer[i] * halfH * 3.0f;
+                    noStroke();
+                    fill(255);
+                    stroke(255, 255);
+                    float g = map(ab.get(i), -1, 1, 0, 255);
+                    float r = (i % 2 == 0) ? radius : radius; 
+                    //float r = radius;
+                    float theta = map(i, 0, sides, 0, TWO_PI);
+                    float x = cx + sin(theta) + r/4;
+                    stroke(g, 255, 255);
+                    //float f = lerpedBuffer[i] + halfH + 0.5f;
+                    strokeWeight(2);
+                    noFill();
+                    rotate(-10);
+                    circle(x, y, f);
+                } 
+            }
         }
                   
             break;
