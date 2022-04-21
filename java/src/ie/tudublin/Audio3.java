@@ -145,7 +145,7 @@ public class Audio3 extends PApplet
             float f = lerpedBuffer[i] * halfH * 4.0f;
 
 
-            rect(f--, f--, i--, i--);
+            //rect(f--, f--, i--, i--);
             
         }
                   
@@ -166,8 +166,10 @@ public class Audio3 extends PApplet
             }
             break;
             // the good one ye
+            
             case 6:
-            background(255);
+            {
+            background(0);
             float radius = map(smoothedAmplitude, 0, 0.1f, 50, 300);		
             int points = (int)map(mouseX, 0, 255, 3, 10);
             int sides = points * 2;
@@ -186,18 +188,43 @@ public class Audio3 extends PApplet
                 noFill();
                 circle(x, y, f);                  
             }
+        }
+        
             break;
             case 7:
-            background(0);
-            for(int i = 0 ; i < ab.size() ; i ++)
             {
-                //background(0);
-                float g = map(ab.get(i), -1, 1, 0, 255);
-                //float g = map(i, 0, ab.size(), 0, 255);
-                stroke(g, 255, 255);
-                float f = lerpedBuffer[i] * halfH * 10.0f;
-                
+            background(0);
+            int grid = 40;   
+            float radius = map(smoothedAmplitude, 0, 0.1f, 50, 300);		
+            int points = (int)map(mouseX, 0, 255, 3, 10);
+            int sides = points * 10;        
+            for(int i = grid ; i < ab.size() - grid ; i += grid)
+            {
+                for(int j = grid; j < ab.size() - grid; j += grid)
+                {
+                    float f = lerpedBuffer[i] * halfH * 3.0f;
+                    noStroke();
+                    fill(255);
+                    rect(i-f, j-f, 3, 3);
+                    stroke(255, 255);
+                    line(i/4-f, j/4-f, i/4, j/4);
+                    float g = map(ab.get(i), -1, 1, 0, 255);
+                    float r = (i % 2 == 0) ? radius : radius; 
+                    //float r = radius;
+                    float theta = map(i, 0, sides, 0, TWO_PI);
+                    float x = cx + sin(theta) + r/4;
+                    float y = cy - cos(theta) + r/4;
+                    stroke(g, 255, 255);
+                    //float f = lerpedBuffer[i] + halfH + 0.5f;
+                    strokeWeight(2);
+                    noFill();
+                    rotate(-10);
+                    circle(x, y, f);
+                    //rotate(-10);
+                    
+                } 
             }
+        }
             break;
             case 8:
             background(0);
@@ -206,8 +233,8 @@ public class Audio3 extends PApplet
 
                 float u = map(ab.get(i), -1, 1, 0, 255);
                 stroke(u, 255, 255);
-                float f = lerpedBuffer[i] * halfH / 1.0f;
-                line(halfH + f, halfH - f, i++, i++);
+                float f = lerpedBuffer[i] * halfH + 1.0f;
+                line(halfH + f, halfH * f, i, i);
             }
             break;
 
