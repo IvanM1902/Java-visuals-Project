@@ -314,7 +314,7 @@ public class Audio3 extends PApplet
                 stroke(u, 100, 255);
                 float f = lerpedBuffer[i] + halfH + 4.0f;
                 translate(10, 10);
-                rect(u/f, u*f, 20, 20);
+                rect(u/f, u, 20, 20);
                 
 
             }
