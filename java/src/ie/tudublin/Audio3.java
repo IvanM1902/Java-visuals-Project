@@ -50,7 +50,7 @@ public class Audio3 extends PApplet
         // Uncomment this to use the microphone
         // ai = minim.getLineIn(Minim.MONO, width, 44100, 16);
         // ab = ai.mix; 
-        ap = minim.loadFile("badinga.wav", 1200);
+        ap = minim.loadFile("bidibou.wav", 1200);
         ap.play();
         ab = ap.mix;
         colorMode(HSB);
@@ -234,7 +234,7 @@ public class Audio3 extends PApplet
             {
             background(0);
             float radius = map(smoothedAmplitude, 0, 0.1f, 50, 300);		
-            int points = (int)map(mouseX, 0, 255, 3, 10);
+            int points = (int)map(500, 0, 255, 3, 10);
             int sides = points * 2;
 
             for(int i = 0 ; i < ab.size() ; i ++)
