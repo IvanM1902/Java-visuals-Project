@@ -107,10 +107,10 @@ public class Audio3 extends PApplet
                     stroke(c, 255, 255);
                     float f = lerpedBuffer[i] * halfH * 2.0f;
 
-                    line(width/2, height/2,width ,f+height);
-                    line(width/2, f+halfH, 0, 0);
-                    line(width/2, height/2, f+width ,0);
-                    line(width/2, height/2,0 ,f+height);  
+                    line(0, 0, f+width/2 ,f+height/2);//right bottom 
+                    //line(width/2, height/2, f-width, f-height);//left top 
+                    line(width/2, height/2, f+width ,0);//right top
+                    line(width/2, height/2,0 ,f+height);// left bottom  
                     //line(i*f, f, f, f);                 
                 }
                 break;
