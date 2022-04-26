@@ -156,29 +156,29 @@ public class Audio3 extends PApplet
         }
 
             break;
-        case 2:
-        background(0);
-        translate(width / 2, height / 2, -off_max);
-        rotateX((float) (frameCount * .01));
-        rotateY((float) (frameCount * .01));
-        rotateZ((float) (frameCount * .01));
-        
-        for (int xo = -off_max; xo <= off_max; xo += 50) {
-          for (int yo = -off_max; yo <= off_max; yo += 50) {
-            for (int zo = -off_max; zo <= off_max; zo += 50) {
-              pushMatrix();
-              translate(xo, yo, zo);
-              rotateX((float) (frameCount * .02));
-              rotateY((float) (frameCount * .02));
-              rotateZ((float) (frameCount * .02));
-              fill(colorFromOffset(xo), colorFromOffset(yo), 
-                colorFromOffset(zo));
-              box((float) (20 + (Math.sin(frameCount / 20.0)) * 15));
-              popMatrix();
-            }
-          }
-        }
-            break;
+            case 2:
+            background(0);  
+    
+            translate(width / 2, height / 2, -off_max);
+            rotateX((float) (frameCount * .01));
+            rotateY((float) (frameCount * .01));
+            rotateZ((float) (frameCount * .01));
+    
+                for (int xo = -off_max; xo <= off_max; xo += 60) {
+                    for (int yo = -off_max; yo <= off_max; yo += 60) {
+                      for (int zo = -off_max; zo <= off_max; zo += 60) {
+                        float f = lerpedBuffer[off_max] * halfH + 5.0f;  
+                        pushMatrix();
+                        translate(xo, yo, zo);
+                        fill(colorFromOffset(xo), colorFromOffset(yo), 
+                          colorFromOffset(zo));
+                        box((float) (f + (Math.sin(frameCount / 20.0)) * 15));
+                        popMatrix();
+                      }
+                    }
+                  }     
+            
+                break;
             //not bad
         case 3:
             background(0);
