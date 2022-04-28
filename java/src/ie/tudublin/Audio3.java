@@ -268,11 +268,7 @@ public class Audio3 extends PApplet
             break;
             case 7:
             {
-                for(int i = 0 ; i < ab.size() ; i ++)
-                {
-                float color = map(ab.get(i), -1, 1, 0, 255);
-                background(color);
-                }
+                background(0);
                 int grid = 20;   
                 float radius = map(smoothedAmplitude, 0, 0.1f, 50, 300);		
                 int points = (int)map(10, 0, 255, 3, 10);
