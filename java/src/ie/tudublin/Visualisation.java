@@ -6,7 +6,7 @@ import ddf.minim.AudioPlayer;
 import ddf.minim.Minim;
 import processing.core.PApplet;
 
-public class Audio3 extends PApplet {
+public class Visualisation extends PApplet {
     Minim minim;
     AudioPlayer ap;
     AudioInput ai;
@@ -89,7 +89,10 @@ public class Audio3 extends PApplet {
         float cx = width / 2;
         float cy = height / 2;
 
+        
         switch (mode) {
+
+            //this code shows 4 lines, starting from the middle that led to 4 corners of the screen
             case 0:
                 background(0);
                 for (int i = 0; i < ab.size(); i++) {
@@ -103,6 +106,8 @@ public class Audio3 extends PApplet {
                     line(width / 2, height / 2, 1200, f + height);// Bottom Right
                 }
                 break;
+
+            //interface of a unseen circle with dots around it that are manipulated by the moving bit of the sound
             case 1: {
                 background(0);
                 int grid = 20;
@@ -117,7 +122,6 @@ public class Audio3 extends PApplet {
                         fill(255);
                         rect(i + f, j + f, 8, 8); // change last 2 parameters to make circles smaller
                         translate(1260, 300, -1);
-
                         float r = (i % 2 == 0) ? radius : radius;
                         float theta = map(i, 0, sides, 0, TWO_PI);
                         float x = cx + sin(theta) + r / 4;
@@ -131,6 +135,7 @@ public class Audio3 extends PApplet {
                 }
             }
                 break;
+            //interface of a cube that rotates on x, y, z, axis and changes by the bit of the sound
             case 2:
                 background(0);
 
@@ -154,6 +159,8 @@ public class Audio3 extends PApplet {
                 }
 
                 break;
+            
+                //single 3D triangle rotating on the x, y, z axis and changing its shape by the bit of the music
             case 3:
                 background(0);
                 for (int i = 0; i < ab.size(); i++)
@@ -192,7 +199,7 @@ public class Audio3 extends PApplet {
                 popMatrix();
 
                 break;
-
+            //multiple circles drawn inside a circle that are moving by the changing sound
             case 4: {
                 background(0);
                 int grid = 20;
@@ -220,6 +227,7 @@ public class Audio3 extends PApplet {
             }
 
                 break;
+                //some other circles inside another circle that change by the upstreaming of the sound
             case 5: {
                 background(0);
                 float radius = map(smoothedAmplitude, 0, 0.1f, 50, 300);
@@ -241,6 +249,8 @@ public class Audio3 extends PApplet {
             }
 
                 break;
+
+                //sun shape with circle inside it and lines,and dotes, that change its size by the change in the song
             case 6: {
                 background(0);
                 int grid = 20;
@@ -277,7 +287,7 @@ public class Audio3 extends PApplet {
         }
 
     }
-
+    //off set the color 
     private float colorFromOffset(int xo) {
         return (int) ((offset + off_max) / (2.0 * off_max) * 255);
     }
