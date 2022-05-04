@@ -134,6 +134,7 @@ public class Visualisation extends PApplet {
                     }
                 }
             }
+
                 break;
             //interface of a cube that rotates on x, y, z, axis and changes by the bit of the sound
             case 2:
@@ -175,6 +176,7 @@ public class Visualisation extends PApplet {
                 rotateZ((float) (frameCount * .05));
                 float p = lerpedBuffer[off_max] * halfH + 80.0f;
                 pushMatrix();
+
 
                 beginShape();
                 vertex(-p, -p, -p);
@@ -221,7 +223,7 @@ public class Visualisation extends PApplet {
                         strokeWeight(2);
                         noFill();
                         rotate(-10);
-                        circle(x, y, f);
+                        circle(x, y, f); //circle
                     }
                 }
             }
