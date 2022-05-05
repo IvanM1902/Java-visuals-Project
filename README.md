@@ -19,6 +19,10 @@ This case we used a circle funtion to represent some dots on the screen in the s
 ![Sketch](java/data/Case1.png)
 
 case 2:
+The cube rotates on the x, y, and z axis using the pushMatrix which is a function that saves 
+the current coordinate system to the stack and the popMatrix which is a function that
+restores the prior coordinate system.
+We used translate to specify an amount to displace objects within the display window.
 ![Sketch](java/data/Case2.png)
 
 case 3:
