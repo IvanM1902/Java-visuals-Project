@@ -12,25 +12,25 @@ When the code is run, the music plays and a visual experience begins, taking the
 
 case 0:
 For this case we used mapping function to draw 4 lines on the screen starting from the middle and that go in 4 corners of the screen and using the lepred buffer so that the behavior of the lines changes with the bit of the song.
-![Sketch](data/Case 0.jpg)
+![Sketch](java/data/Case 0.jpg)
 
 case 1:
-![Sketch](data/Case 1.jpg)
+![Sketch](java/data/Case 1.jpg)
 
 case 2:
-![Sketch](data/Case 2.jpg)
+![Sketch](java/data/Case 2.jpg)
 
 case 3:
-![Sketch](data/Case 3.jpg)
+![Sketch](java/data/Case 3.jpg)
 
 case 4:
-![Sketch](data/Case 4.jpg)
+![Sketch](java/data/Case 4.jpg)
 
 case 5:
-![Sketch](data/Case 5.jpg)
+![Sketch](java/data/Case 5.jpg)
 
 case 6:
-![Sketch](data/Case 6.jpg)
+![Sketch](java/data/Case 6.jpg)
 
 
 # Instructions
