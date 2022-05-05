@@ -15,6 +15,7 @@ For this case we used mapping function to draw 4 lines on the screen starting fr
 ![Sketch](java/data/Case0.png)
 
 case 1:
+This case we used a circle funtion to represent some dots on the screen in the shape of a circle so they are a spider web molecule shape that looks nice and change by the bit of the song.
 ![Sketch](java/data/Case1.png)
 
 case 2:
@@ -28,8 +29,10 @@ case 4:
 
 case 5:
 ![Sketch](java/data/Case5.png)
+For this case we used the circle function to map it in the circle and expand in to more circles that change by the bit of the song
 
 case 6:
+For this case we combined the spider web dots from case 1 and added line function that make up a shape of a sun with a configuration of circles outside that change by the bit of the song. 
 ![Sketch](java/data/Case6.png)
 
 
