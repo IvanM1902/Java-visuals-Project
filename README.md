@@ -28,8 +28,9 @@ case 4:
 ![Sketch](java/data/Case4.png)
 
 case 5:
-![Sketch](java/data/Case5.png)
 For this case we used the circle function to map it in the circle and expand in to more circles that change by the bit of the song
+![Sketch](java/data/Case5.png)
+
 
 case 6:
 For this case we combined the spider web dots from case 1 and added line function that make up a shape of a sun with a configuration of circles outside that change by the bit of the song. 
