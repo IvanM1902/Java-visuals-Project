@@ -1,10 +1,16 @@
 # OOP_assigment_bidibao
-A repository for a group assignment: Shams, Mervin, Dima, Ivan
+A repository for a group assignment: 
+Shamsuddin Refaei C20308491,
+Mervin Ilyaz C20371681, 
+Dumitru Cojocari C20321911, 
+Ivan Medved C20338661.
 
 # Description of the assignment
 For this assignment, we have created an audio visual experience using Java code. We have picked an audio piece and created visual effects that match it, creating a cool visual experience that users can watch.
 The audio we have chosen is called
 When the code is run, the music plays and a visual experience begins, taking the user on a journey where they see many different transitions, lights, colours and movement. Every sound and every beat is replicated with colour and movement which is satisfying and enjoyable to watch.
+
+
 
 # Instructions
 To control the visual experience, users can press numbers on the keyboard from 0 to 6. There are multiple effects to choose from and each one has different shapes, sizes, colours and transitions. The audio is the same throughout the whole experience but every visual effect is different.
