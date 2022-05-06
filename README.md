@@ -49,7 +49,7 @@ For this case we used the circle function to map it in the circle and expand in 
 
 
 case 6:
-For this case we combined the spider web dots from case 1 and added line function that make up a shape of a sun with a configuration of circles outside that change by the beat of the song. 
+For this case we combined the spider web dots from case 1 and added line function which makes it look like fireworks are going off inside of a circle that make up a shape of a sun with a configuration of circles outside that change by the beat of the song. 
 
 ![Sketch](java/data/Case6.png)
 
