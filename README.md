@@ -11,33 +11,46 @@ The audio we have chosen is called
 When the code is run, the music plays and a visual experience begins, taking the user on a journey where they see many different transitions, lights, colours and movement. Every sound and every beat is replicated with colour and movement which is satisfying and enjoyable to watch.
 
 case 0:
-For this case we used mapping function to draw 4 lines on the screen starting from the middle and that go in 4 corners of the screen and using the lepred buffer so that the behavior of the lines changes with the bit of the song.
+For this case we used mapping function to draw 4 lines on the screen starting from the middle and that go in 4 corners of the screen and using the lerped buffer so that the behavior of the lines changes with the beat of the song. The idea was to make it look like a spotlight (bottom lines), but then we thought we would make an X with the end of the lines expanding and conveying its colours.
+
 ![Sketch](java/data/Case0.png)
 
+
 case 1:
-This case we used a circle funtion to represent some dots on the screen in the shape of a circle so they are a spider web molecule shape that looks nice and change by the bit of the song.
+This case we used a circle funtion to represent some dots on the screen in the shape of a circle so they are a spider web molecule shape that looks nice and change by the beat of the song.
+
 ![Sketch](java/data/Case1.png)
+
 
 case 2:
 The cube rotates on the x, y, and z axis using the pushMatrix which is a function that saves 
 the current coordinate system to the stack and the popMatrix which is a function that
 restores the prior coordinate system.
 We used translate to specify an amount to displace objects within the display window.
+The idea came from when a team mate brought in a rubik's cube and we came up with an ida of sketching out a cube with smaller cubes connecting together and expanding with the beat of the song.
+
 ![Sketch](java/data/Case2.png)
 
+
 case 3:
+The rotating pyramid rotates on the x, y, and z axis and by adding the lerpedBuffer, is expands to the beat of the song. The pyramid's vertices are drawn relative to a centerpoint, so using the Translate() function, we can place it properly in the middle of the screen.
+
 ![Sketch](java/data/Case3.png)
 
+
 case 4:
+This case generates multiple cicles in a spiral effect which can make the user feel like they are falling through the universe. The circles move and expand with the song.
+
 ![Sketch](java/data/Case4.png)
 
 case 5:
-For this case we used the circle function to map it in the circle and expand in to more circles that change by the bit of the song
+For this case we used the circle function to map it in the circle and expand in to more circles that change by the beat of the song. Also it looks like a colourful donut and it becomes even bigger.
 ![Sketch](java/data/Case5.png)
 
 
 case 6:
-For this case we combined the spider web dots from case 1 and added line function that make up a shape of a sun with a configuration of circles outside that change by the bit of the song. 
+For this case we combined the spider web dots from case 1 and added line function that make up a shape of a sun with a configuration of circles outside that change by the beat of the song. 
+
 ![Sketch](java/data/Case6.png)
 
 
