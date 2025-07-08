@@ -252,7 +252,7 @@ public class Visualisation extends PApplet {
 
                 break;
 
-                //sun shape with circle inside it and lines,and dotes, that change its size by the change in the song
+                //Sun shape with circle inside it and lines,and dotes, that change its size by the change in the song
             case 6: {
                 background(0);
                 int grid = 20;
