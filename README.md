@@ -1,4 +1,4 @@
-# OOP_assigment_bidibao
+# OOP_assigment
 A repository for a group assignment: 
 Shamsuddin Refaei C20308491,
 Mervin Ilyaz C20371681, 
